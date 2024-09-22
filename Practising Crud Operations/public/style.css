@@ -1,0 +1,38 @@
+
+h3{
+    color: maroon;
+    padding-left:450px ;
+}
+
+.post
+{
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 200px;
+    background-color: antiquewhite;
+    margin: 10px;
+    padding-left: 10px;
+}
+.container
+{
+    border: 1px solid black;
+    height: 20px;
+    width: 130px;
+    border-radius: 10px;
+    background-color: antiquewhite;
+    margin: 10px;
+    padding: 10px;
+
+}
+a{
+    text-decoration: none;
+}
+
+button{
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+    margin: 5px;
+    padding: 5px;
+}
