@@ -1,0 +1,48 @@
+body
+{
+    background-color: rgb(255, 192, 203);
+}
+
+img{
+    height: 150px;
+    width:150px;
+}
+
+/* .list
+{
+    display: inline;
+   
+} */
+
+.list li a{
+    text-decoration: none;
+}
+
+nav {
+    background-color: rgb(233, 129, 147);
+   
+    padding: 10px; 
+  }
+  
+  ul.list {
+    list-style-type: none; /* Remove default list bullet points */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Align items in a row */
+    justify-content: center; /* Center items horizontally (optional) */
+  }
+  
+  ul.list li {
+    margin: 0 10px; /* Space between list items (adjust as needed) */
+  }
+  
+  ul.list li a {
+    text-decoration: none; /* Remove underline from links */
+    color: #007bff; /* Link color (adjust as needed) */
+    font-weight: bold; /* Bold font for links (optional) */
+  }
+  
+  ul.list li a:hover {
+    color: #0056b3; /* Change color on hover (optional) */
+  }
+  
