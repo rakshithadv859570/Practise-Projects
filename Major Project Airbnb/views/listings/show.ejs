@@ -1,0 +1,69 @@
+<% layout("/layouts/boilerplate") %>
+
+  <body>
+
+    <div class="row mt-3 mb-3">
+      <div class="col-8 offset-2">
+        <h1>Listings Details</h1>
+      </div>
+      <div class="card col-6 offset-2">
+        <img src="<%= listing.image.url %>" class="card-img-top show-img" alt="listing_image" />
+        <div class="card-body">
+          <p class="card-text">
+            <%= listing.title %> <br />
+              <%= listing.description %> <br />
+                &#8377;<%= listing.price %> <br />
+                  <!-- .toLocaleString("en-IN") -->
+                  <%= listing.location %> <br />
+                    <%= listing.country %> <br />
+          </p>
+        </div>
+
+        <div class="col-1 mt-2">
+          <form action="/listings/<%= listing._id %>/edit" method="get"><button class="btn btn-danger">Edit</button>
+          </form>
+        </div>
+
+        <div class="col-1 mt-3">
+          <form action="/listings/<%= listing._id %>?_method=DELETE" method="post">
+            <button class="btn btn-danger">Delete</button>
+          </form>
+        </div>
+      </div>
+      <!-- //<a href="/listings/<%= listing._id %>/edit" class="btn btn-danger">Edit this listings</a> -->
+
+
+
+    </div>
+  </body>
+
+  <!-- <ul>
+      <li>
+        <img src="<%= listing.image.url %>" alt="Random image" style="height: 300px; width: 400px" />
+      </li>
+      <li>
+        <%= listing.title %>
+      </li>
+      <li>
+        <%= listing.description %>
+      </li>
+      <li>&#8377;<%= listing.price %>
+        .toLocaleString("en-IN") 
+  </li>
+  <li>
+    <%= listing.location %>
+  </li>
+  <li>
+    <%= listing.country %>
+  </li>
+  </ul> -->
+
+  <!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Show the Documents</title>
+  </head> -->
+
+  <!-- </html> -->
