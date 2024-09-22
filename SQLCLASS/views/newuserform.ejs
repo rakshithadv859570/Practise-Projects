@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New User Adding Form</title>
+  </head>
+  <body>
+    <h4>Create a New User Here:</h4>
+    <form action="/user" method="post">
+      <input name="id" placeholder="Enter a id to Create:" />
+      <br /><br />
+      <input name="username" placeholder="Enter a Valid username:" />
+      <br /><br />
+      <input
+        type="email"
+        name="email"
+        placeholder="Enter a Proper email addresss:"
+      />
+      <br /><br />
+      <input
+        type="password"
+        name="password"
+        placeholder="Create a Proper password"
+      />
+      <br /><br />
+      <button type="submit">Add To DB</button>
+    </form>
+  </body>
+</html>

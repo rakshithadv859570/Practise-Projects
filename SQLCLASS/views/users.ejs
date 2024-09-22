@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User View Page</title>
+    <style>
+      table,
+      th,
+      td,
+      tr {
+        border: 1px solid Black;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <% for(let user of data) {%>
+    <h7><%= user.id%> | <%= user.username %> | <%= user.email %></h7>
+    <br />
+    <% } %> -->
+    <table>
+      <tr>
+        <th>Id:</th>
+        <th>username:</th>
+        <th>Email:</th>
+        <th>Submission Button:</th>
+        <th>Deletion Button</th>
+      </tr>
+
+      <% for(let user of data) {%>
+      <tr>
+        <td><%= user.id%></td>
+        <td><%= user.username %></td>
+        <td><%= user.email %></td>
+        <td>
+          <form action="/user/<%=user.id%>/edit" method="get">
+            <button>Edit username</button>
+          </form>
+          <td><form action="/user/<%= user.id %>?_method=DELETE" method="post">
+            <button type="submit">Delete It</button>
+        </form></td>
+        </td>
+      </tr>
+      <% } %>
+    </table>
+    <a href="http://localhost:8050/user/new"> Create a new user name here:</a>
+  </body>
+</html>
